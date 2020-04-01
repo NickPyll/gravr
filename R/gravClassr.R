@@ -9,6 +9,14 @@
 #
 # This function produces one output, a dataframe with all relevant output.
 
+# Load packages
+if (!require(tidyverse)) install.packages('tidyverse')
+library(tidyverse)
+if (!require(tidyselect)) install.packages('tidyselect')
+library(tidyselect)
+if (!require(glue)) install.packages('glue')
+library(glue)
+
 gravClassr <- function(df, var, k) {
 
   # Produce generic names for attributes for use in calculations
