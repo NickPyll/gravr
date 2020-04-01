@@ -7,9 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "nick.pylypiw@gmail.com",
            comment = c(ORCID = "0000-0002-7841-0312"))
-Description: This package operates under the assumption that k-means clusters behave like
-planets, having mass and, thus, gravity. Individuals in the cluster space can then be analyzed
-based on these gravitational fields.
+Description: This package operates under the assumption that k-means clusters behave like planets, having mass and, thus, gravity. Individuals in the cluster space can then be analyzed based on these gravitational fields.
 License: 
 Encoding: UTF-8
 LazyData: true
