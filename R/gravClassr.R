@@ -1,13 +1,13 @@
-# This function treats k means clusters as physical objects with mass and gravity,
-# calculating that gravity for each observation and flagging observations whose
-# distance and gravity classifications differ.
-#
-# This function requires three inputs:
-# 1. dataframe
-# 2. List of numeric variables for use in clustering algorithm
-# 3. Value of k
-#
-# This function produces one output, a dataframe with all relevant output.
+#' This function treats k means clusters as physical objects with mass and gravity,
+#' calculating that gravity for each observation and flagging observations whose
+#' distance and gravity classifications differ.
+#'
+#' This function requires three inputs:
+#' 1. dataframe
+#' 2. List of numeric variables for use in clustering algorithm
+#' 3. Value of k
+#'
+#' This function produces one output, a dataframe with all relevant output.
 
 gravClassr <- function(df, var, k) {
 
