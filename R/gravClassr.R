@@ -2,22 +2,17 @@
 #' calculating that gravity for each observation and flagging observations whose
 #' distance and gravity classifications differ.
 #'
-#' This function requires three inputs:
-#' 1. dataframe
-#' 2. List of numeric variables for use in clustering algorithm
-#' 3. Value of k
+#' @import tidyverse
+#' @import tidyselect
+#' @import glue
 #'
-#' This function produces one output, a dataframe with all relevant output.
+#' @param df dataframe
+#' @param var a column name or list of column names from the df
+#' @param k number of clusters
+#' @return
+#' @export
 
 gravClassr <- function(df, var, k) {
-
-  # Load packages
-  if (!require(tidyverse)) install.packages('tidyverse')
-  if (!require(tidyselect)) install.packages('tidyselect')
-  if (!require(glue)) install.packages('glue')
-  library(tidyverse)
-  library(tidyselect)
-  library(glue)
 
   # Produce generic names for attributes for use in calculations
   newvar <- paste0("var", seq(1:length(var)))

@@ -11,3 +11,8 @@ Description: This package operates under the assumption that k-means clusters be
 License: 
 Encoding: UTF-8
 LazyData: true
+Imports: 
+  tidyverse,
+  tidyselect,
+  glue
+RoxygenNote: 7.1.0
