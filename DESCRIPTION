@@ -11,7 +11,7 @@ Description: This package operates under the assumption that k-means clusters be
 License: 
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Depends: 
   tidyverse,
   tidyselect,
   glue
